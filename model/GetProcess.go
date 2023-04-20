@@ -52,38 +52,3 @@ func GetProcess() {
 	// 	str := "进程信息上传完毕"
 	// 	fmt.Printf("%v %v\n", Date, str)
 }
-
-// func GetProcess() {
-// 	// ip := utils.IP()
-// 	// var rss
-// 	var data = make(map[string]interface{}, 10)
-
-// 	// var processes
-// 	p, _ := process.Processes()
-// 	for _, pro := range p {
-// 		//获取进程ID
-// 		data["Pid"] = pro.Pid
-// 		//获取进程名称
-// 		Name, _ := pro.Name()
-// 		data["Name"] = Name
-// 		//获取进程内存信息
-// 		memory, _ := pro.MemoryInfo()
-// 		// data["memory"] = memory.RSS
-// 		// fmt.Println(memory)
-// 		if memory != nil {
-// 			rss := (memory.RSS / 8 / 1024)
-// 			fmt.Println(rss)
-// 		}
-
-// 		// InfluxWrite("System", "system_process", ip, "system_pro", data)
-// 		//清除map
-// 		delete(data, "Pid")
-// 		delete(data, "Name")
-// 		delete(data, "memory")
-// 	}
-
-// 	//当前时间
-// 	Date := time.Now()
-// 	str := "进程信息上传完毕"
-// 	fmt.Printf("%v %v\n", Date, str)
-// }
